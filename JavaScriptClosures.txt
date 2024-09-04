@@ -1,0 +1,13 @@
+let score = function(){
+    let points = 0;
+   return function (){
+        points++;
+        return points;
+    }
+    
+}()
+//
+console.log(score());
+console.log(score());
+
+//it allows you to put variables in functions that can be accessed by inner functions, therefore making it private instead of global, so no one can change it from the global scope
